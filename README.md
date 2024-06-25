@@ -3,7 +3,7 @@
 ## Resumo
 Relógio/Termômetro binário utilizando uma placa Arduino.
 
-Realizamos esse projeto na disciplina de Eletrônica para Computação ministrada pelo prof Simões na USP - São Carlos
+O projeto foi feito durante a disciplina de Eletrônica para Computação na USP - São Carlos
 
 ## Tabela de Componentes
 | Quantidade | Componente | Valor Unitário |
@@ -14,13 +14,13 @@ Realizamos esse projeto na disciplina de Eletrônica para Computação ministrad
 |**Total:** |  | **110.79** |
 
 ## Funcionamento
-O componente principal do projeto é o Módulo DS3231 que, depois de configurar seu tempo corretamente uma vez, consegue obter o tempo passado a partir desse tempo inicial e atualizar os dados do relógio do circuito, essa "checagem" ocorre por volta de 115 mil vezes por segundo e leva em conta também a variação de temperatura local e a dilatação do circuito, assim tornando o relógio bastante preciso. 
+O componente principal do projeto é o Módulo DS3231, um relógio de tempo real (RTC) extremamente preciso. Após configurá-lo corretamente uma vez, ele é capaz de manter o tempo de forma contínua, atualizando os dados do relógio do circuito cerca de 115 mil vezes por segundo. Essa precisão é alcançada através da compensação automática de variações de temperatura e dilatação do circuito, garantindo uma cronometragem extremamente precisa.
 
-Além disso, as informações desse termômetro interno também podem ser puxadas pelo código do arduino, assim podemos obter, além do tempo, a temperatura do local.
+Além de fornecer informações temporais, o DS3231 também possui um termômetro interno cujos dados podem ser acessados via código Arduino. Isso permite obter, além da hora, a temperatura do ambiente.
 
-Depois disso, basta utilizar uma biblioteca já presente no software do arduino para configurar o display de leds 8x8, para que ele possa mostrar, em cada coluna, uma informação diferente, no caso: dia, mês, ano, temperatura, hora, minuto e segundo.
+Para exibir essas informações, utilizamos uma biblioteca disponível no software do Arduino para configurar um display de LEDs 8x8. Esse display é capaz de mostrar, em cada coluna, diferentes informações como dia, mês, ano, temperatura, hora, minuto e segundo, proporcionando uma visualização clara e eficiente dos dados coletados pelo módulo DS3231.
 
-```
+```cpp
 #include <Wire.h>
 #include "DS3231.h" // biblioteca modulo rtc e termometro
 #include "LedControl.h" // biblioteca matriz de leds
@@ -101,9 +101,11 @@ void acertaRelogioAgora() {
 
 ## Link do Vídeo
 
+## Professor Reponsável
+Simões - https://gitlab.com/simoesusp
 
 ## Integrantes
-Caroline Akimi - 15445630
+Caroline Ueda - 15445630
 
 Felipe Cerri - 15451119
 
