@@ -20,6 +20,8 @@ Além de fornecer informações temporais, o DS3231 também possui um termômetr
 
 Para exibir essas informações, utilizamos uma biblioteca disponível no software do Arduino para configurar um display de LEDs 8x8. Esse display é capaz de mostrar, em cada coluna, diferentes informações como dia, mês, ano, temperatura, hora, minuto e segundo, proporcionando uma visualização clara e eficiente dos dados coletados pelo módulo DS3231.
 
+![display](display.png)
+
 ```cpp
 #include <Wire.h>
 #include "DS3231.h" // biblioteca modulo rtc e termometro
@@ -93,11 +95,11 @@ void acertaRelogioAgora() {
 ```
 
 ## Esquemático no Frietzing
-![esquematico]{}
+![esquematico]()
 
 ## Foto Do Projeto
-![projeto_antes]{}
-![projeto_depois]{}
+![projeto_antes]()
+![projeto_depois]()
 
 ## Link do Vídeo
 
