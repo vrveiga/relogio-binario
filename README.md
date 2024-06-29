@@ -95,7 +95,7 @@ void acertaRelogioAgora() {
 ```
 
 ## Esquemático no Frietzing
-![fritz]()
+![fritz](fritz.png)
 
 ## Foto Do Projeto
 ![projeto_antes]()
