@@ -98,8 +98,9 @@ void acertaRelogioAgora() {
 ![fritz](fritz.png)
 
 ## Foto Do Projeto
-![projeto_antes]()
-![projeto_depois]()
+![projeto_antes](antes.jpeg)
+![projeto_depois1](foto2.jpg)
+![projeto_depois1](foto1.jpeg)
 
 ## Link do Vídeo
 
