@@ -105,6 +105,9 @@ void acertaRelogioAgora() {
 ## Link do Vídeo
 https://youtu.be/iWj5cRC4Uhc
 
+## Referência
+https://www.makerhero.com/blog/aprenda-a-construir-um-relogio-binario-com-arduino/
+
 ## Professor Reponsável
 Simões - https://gitlab.com/simoesusp
 
